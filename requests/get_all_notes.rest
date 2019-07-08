@@ -1,0 +1,4 @@
+GET http://localhost:3001/notes
+
+###
+GET http://localhost:3001/bla HTTP/1.1

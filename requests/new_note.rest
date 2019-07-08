@@ -1,0 +1,17 @@
+POST http://localhost:3001/notes
+Content-Type: application/json
+
+{
+  "content": "REST Client ext says hi",
+  "important": true
+}
+
+###
+
+POST http://localhost:3001/notes HTTP/1.1
+content-type: application/json
+
+{
+  "content": "hi",
+  "imporant": false
+}
