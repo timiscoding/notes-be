@@ -1,0 +1,33 @@
+@baseUrl=http://localhost:3001
+
+POST {{baseUrl}}/api/notes
+Content-Type: application/json
+
+{
+  "content": "REST Client ext says hi",
+  "important": true
+}
+
+###
+
+POST {{baseUrl}}/api/notes HTTP/1.1
+content-type: application/json
+
+{
+  "content": "lol",
+  "imporant": false
+}
+
+###
+@deleteId=5d2545b6751c0e1aec4cd174
+DELETE {{baseUrl}}/api/notes/{{deleteId}} HTTP/1.1
+
+###
+@updateId=5d2546a0751c0e1aec4cd175
+PUT {{baseUrl}}/api/notes/{{updateId}} HTTP/1.1
+content-type: application/json
+
+{
+  "content": "update me mongo",
+  "important": true
+}
